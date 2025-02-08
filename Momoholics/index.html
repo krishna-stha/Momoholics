@@ -14,10 +14,11 @@
 </span></text>
       </a>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#routine">Order My Momo</a></li>
-      <li><a href="#about">
+      <li><a href="#home" title="Go Home">Home</a></li>
+      <li><a href="#menu" title="Checkout Menu">Menu</a></li>
+      <li><a href="#routine" title="Order Momo">Order My Momo</a></li>
+        <li><a href="#routine" title="Login or Sign Up">Login</a></li>
+      <li><a href="#about" title="Add items to your cart">
         <div class="ord">
         <span>Add to cart</span>
         <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -33,12 +34,218 @@
   <section id="home">
 <div class="main">
   <div class="intro">
-
+<div class="desc">
+  <div class="desc-head">
+    <h1>WHAT DO YOU FEEL LIKE TODAY?</h1>
   </div>
-  <div class="home-img">
-    <img src="momomo.jpg" align="right">
+  <div class="intro-food">
+    
   </div>
 </div>
+<div class="home-img">
+  <img src="momomo.jpg" align="right">
+</div>
+  </div>
+</div>
+  </section>
+  <section id="menu">
+    <div class="container">
+      <h1 class="heading">Our Menu</h1>
+
+      <div class="box-container">
+        <div class="box reveal">
+          <img src="steam.jpg" alt="" />
+          <h3>Steam Momo</h3>
+          <p>
+            Soft, slightly chewy outer dough with a juicy and flavorful filling
+            inside.
+          </p>
+          <a href="#" class="btn" id="first">Add to cart</a>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="img-place">
+              <div class="hangs">
+                <img src="Momo_4.jpg" alt="My website" />
+                <div class="item-info">
+                  <form method="post" class="fbox">
+                      <h3>Add this item to you cart:</h3>
+                      <label for="fname" style="margin-top: 5px"
+                        >Fillings:</label
+                      ><br />
+                      <input
+                        type="radio"
+                        id="buff"
+                        name="filling"
+                        value="Buff"
+                      />
+                      <label for="buff">Buff</label><br />
+                      <input
+                        type="radio"
+                        id="chick"
+                        name="filling"
+                        value="Chicken"
+                      />
+                      <label for="chick">Chicken</label><br />
+                      <input type="radio" id="veg" name="filling" value="Veg" />
+                      <label for="veg">Veg</label><br />
+                      <input
+                        type="radio"
+                        id="pork"
+                        name="filling"
+                        value="Pork"
+                      />
+                      <label for="javascript">Pork</label>
+                      <br /><br />
+                      <label for="fquan" style="margin-top: 30px"
+                        >Quantity(in plates):</label
+                      >
+                      <input
+                        type="text"
+                        id="fquan"
+                        name="fquan"
+                      />
+                      <span id="steam-price"></span><br />
+
+                      <label for="fadd">Address:</label>
+                      <select id="fadd" name="fadd">
+                        <optgroup label="Kathmandu">
+                          <option value="">Kalimati</option>
+                          <option value="Kalanki">Kalanki</option>
+                          <option value="Koteshwor">Koteshwor</option>
+                          <option value="Teku">Teku</option>
+                        </optgroup>
+                        <hr />
+                        <optgroup label="Lalitpur">
+                          <option value="Sanepa">Sanepa</option>
+                          <option value="Jhamsikhel">Jhamsikhel</option>
+                          <option value="Pulchowk">Pulchowk</option>
+                          <option value="Satdobato">Satdobato</option>
+                        </optgroup>
+                        <hr />
+                        <optgroup label="Bhaktapur">
+                          <option value="Thimi">Thimi</option>
+                          <option value="Nagarkot">Nagarkot</option>
+                          <option value="Sallaghari">Sallaghari</option>
+                        </optgroup>
+                      </select>
+                      <br /><br />
+                      <input type="submit" value="Submit" />
+                  
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box reveal">
+          <img src="fried.png" alt="" />
+          <h3>Fried Momo</h3>
+          <p>Crispy, golden-brown outer layer with a crunchy texture.</p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box reveal">
+          <img src="kothey.jpg" alt="" />
+          <h3>Kothey Momo</h3>
+          <p>
+            Crispy and golden on one side, soft and juicy on the other. The
+            contrast in texture makes it extra enjoyable.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="chilli.png" alt="" />
+          <h3>Chilli Momo</h3>
+          <p>
+            Spicy, tangy, and saucy version of momo, bursting with bold flavors.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="openm.jpg" alt="" />
+          <h3>Open Momo</h3>
+          <p>
+            Flower like dumplings, consists juicy filling, rich seasonings, and
+            flavorful toppings.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="tandoori.jpg" alt="" />
+          <h3>Tandoori Momo</h3>
+          <p>
+            A fusion of momo and tandoori chicken, with a delicious charred,
+            smoky aroma.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="jholmomo.jpeg" alt="" />
+          <h3>Jhol Momo</h3>
+          <p>
+            Warms your day with spicy, tangy, and slightly creamy soup (jhol).
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="green-momo.jpg" alt="" />
+          <h3>Green Momo</h3>
+          <p>
+            Momo with spinach-infused dough and nourished with a vibrant and a
+            healthier touch.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="buckwheat.jpg" alt="" />
+          <h3>Buckwheat Momo</h3>
+          <p>
+            A fibrous alternative with a nutty, earthy, and slightly bitter
+            taste.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="sadekomomo.png" alt="" />
+          <h3>Sadeko Momo</h3>
+          <p>
+            A spicy, tangy, and flavorful Nepali-style momo tossed in a mix of
+            aromatic spices, mustard oil, and fresh herbs.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="chocomomo.jpg" alt="" />
+          <h3>Chocolate Momo</h3>
+          <p>
+            A delightful and sweet twist on the traditional momo, where the
+            filling is made with melted chocolate
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box reveal">
+          <img src="thukpamomo.png" alt="" />
+          <h3>Thukpa(Soup) Momo</h3>
+          <p>
+            A flavorful, spicy noodle soup, creating a comforting and hearty
+            meal.
+          </p>
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    
   </section>
 </body>
 <script src="script.js"></script>
